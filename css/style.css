@@ -1,0 +1,135 @@
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #011C40;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.title-section {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 60px;
+    font-size: 28px;
+}
+
+/* header */
+
+.header-page {
+    padding: 35px 0 280px 0;
+    background-image: url(../img/bg-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 210px;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu__item {
+    margin-right: 30px;
+}
+
+.main-menu__item:last-child {
+    margin-right: 0;
+}
+
+.main-menu__link {
+    color: #F9FBFD;
+    transition: color 0.3s ease;
+}
+
+.main-menu__link:hover {
+    color: #0cadfd;
+}
+
+.main-title {
+    font-size: 54px;
+    color: #F9FBFD;
+    margin-bottom: 30px;
+    padding-left: 100px;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #F9FBFD;
+    padding-left: 100px;
+}
+
+.humb {
+    display: none;
+    background-color: transparent;
+    background-image: url(../svg/icon-humb.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 24px;
+    height: 18px;
+    padding: 0;
+}
+
+.clouse {
+    display: none;
+    background-color: transparent;
+    background-image: url(../svg/icon-close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+}
+
+/* header end */
