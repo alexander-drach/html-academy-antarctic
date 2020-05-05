@@ -13,7 +13,11 @@
     <div class="container">
       <nav class="nav">
         <a class="logo">
-          <img src="svg/logo-desktop.svg" alt="Логотип Круизы в Антарктику">
+          <picture>
+            <source srcset="svg/logo-tablet.svg" media="(max-width: 1024px)">
+            <source srcset="svg/logo-mobile.svg" media="(max-width: 768px)">
+            <img class="logo__img" src="svg/logo-desktop.svg" alt="Логотип Круизы в Антарктику">
+          </picture>
         </a>
         <ul class="list main-menu">
           <li class="main-menu__item"><a class="main-menu__link">Преимущества</a></li>
@@ -35,7 +39,11 @@
   <footer class="footer-page">
     <div class="container">
       <a class="logo logo_footer">
-        <img src="svg/logo-desktop.svg" alt="Логотип Круизы в Антарктику">
+        <picture>
+          <source srcset="svg/logo-tablet.svg" media="(max-width: 1024px)">
+          <source srcset="svg/logo-mobile.svg" media="(max-width: 768px)">
+          <img class="logo__img" src="svg/logo-desktop.svg" alt="Логотип Круизы в Антарктику">
+        </picture>
       </a>
       <ul class="list footer-menu">
         <li class="footer-menu__item"><a class="footer-menu__link">Преимущества</a></li>
