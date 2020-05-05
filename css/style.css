@@ -157,3 +157,62 @@ section {
 }
 
 /* intro end */
+
+/* features */
+
+.features {
+    background-image: url(../img/bg-features-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-list__item {
+    width: calc(100% / 3 - 40px);
+    background-color: #F9FBFD;
+    padding: 30px 30px 50px 30px;
+}
+
+.features-list__item:nth-child(even) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.features-list__icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+.features-list__icon_desc {
+    width: 27px;
+    height: 32px;
+    background-image: url(../svg/icon-feature-desc.svg);
+}
+
+.features-list__icon_allinclusive {
+    width: 38px;
+    height: 21px;
+    background-image: url(../svg/icon-feature-allinclusive.svg);
+}
+
+.features-list__icon_zodiac {
+    width: 42px;
+    height: 15px;
+    background-image: url(../svg/icon-feature-zodiac.svg);
+}
+
+.features-list__title {
+    font-size: 18px;
+}
+
+.features-list__desc {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* features end */
