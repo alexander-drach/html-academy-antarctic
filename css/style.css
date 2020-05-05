@@ -133,3 +133,27 @@ section {
 }
 
 /* header end */
+
+/* intro */
+
+.intro .container {
+    display: flex;
+    align-items: center;
+}
+
+.intro__desc {
+    flex: 1;
+    margin-right: 90px;
+    line-height: 1.5;
+}
+
+.intro .title-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.intro__thumb {
+    width: 560px;
+}
+
+/* intro end */
