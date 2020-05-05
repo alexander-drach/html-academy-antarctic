@@ -317,3 +317,80 @@ section {
 }
 
 /* contacts end */
+
+/* footer */
+
+.footer-page {
+    padding: 50px 0;
+    background-color: #011C40;
+}
+
+.footer-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo_footer {
+    margin-right: 40px;
+}
+
+.footer-menu__link {
+    color: #F9FBFD;
+    transition: color 0.3s ease;
+}
+
+.footer-menu__link:hover {
+    color: #0cadfd;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu__item {
+    margin-right: 30px;
+}
+
+.footer-menu__item:last-child {
+    margin-right: 0;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list__item {
+    margin-right: 30px;
+}
+
+.social-list__item:last-child {
+    margin-right: 0;
+}
+
+.social-list__link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-list__link_facebook {
+    background-image: url(../svg/icon-facebook.svg);
+}
+
+.social-list__link_instagram {
+    background-image: url(../svg/icon-instagram.svg);
+}
+
+.social-list__link_twitter {
+    background-image: url(../svg/icon-twitter.svg);
+}
+
+/* footer end */
