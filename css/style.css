@@ -274,3 +274,46 @@ section {
 }
 
 /* order end */
+
+/* contacts */
+
+.contacts .container {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__map {
+    width: 560px;
+    height: 300px;
+    margin-right: 100px;
+}
+
+.contacts__info {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.contacts__location {
+    padding-left: 30px;
+    background-image: url(../svg/icon-geo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contacts__phone {
+    padding-left: 30px;
+    background-image: url(../svg/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #011C40;
+}
+
+/* contacts end */
