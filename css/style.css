@@ -216,6 +216,14 @@ section {
 
 /* order */
 
+.order {
+    padding: 50px 0;
+    background-image: url(../img/bg-order-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container_order {
     max-width: 1080px;
     display: flex;
