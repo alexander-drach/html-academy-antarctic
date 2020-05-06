@@ -735,7 +735,8 @@ section {
     }
 
     .intro .container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .intro__desc {
