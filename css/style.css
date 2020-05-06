@@ -114,7 +114,6 @@ section {
 .main-menu {
     display: flex;
     font-family: "Montserrat-Medium";
-
 }
 
 .main-menu__item {
@@ -171,6 +170,61 @@ section {
     width: 13px;
     height: 13px;
     padding: 0;
+}
+
+.logo-mobile-menu {
+    display: none;
+}
+
+.is-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    background-color: #E5E5E5;
+    margin-bottom: 0;
+    z-index: 500;
+    padding: 92px 15px 60px 15px;
+    align-items: flex-start;
+}
+
+.is-open .logo {
+    display: none;
+}
+
+.is-open .logo-mobile-menu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.is-open .humb {
+    display: none;
+}
+
+.is-open .clouse {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.is-open .main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.is-open .main-menu__item {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.is-open .main-menu__link {
+    color: #011C40;;
 }
 
 /* header end */
