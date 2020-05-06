@@ -363,6 +363,11 @@ section {
     background-color: #F9FBFD;
     color: #011C40;
     margin-top: auto;
+    transition: opacity 0.3s ease;
+}
+
+.goods-list__link:hover {
+    opacity: 0.8;
 }
 
 .goods-list__preview {
@@ -461,6 +466,12 @@ section {
     padding: 15px 0 17px 0;
     text-align: center;
     font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
 }
 
 /* order end */
