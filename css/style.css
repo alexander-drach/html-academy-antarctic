@@ -216,6 +216,85 @@ section {
 
 /* goods */
 
+.goods-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods-list__item {
+    width: calc(100% / 4 - 30px);
+    margin: 0 15px 30px 15px;
+    background: #011C40;
+    box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #F9FBFD;
+    padding: 75px 25px 35px 25px;
+}
+
+
+.goods-list__title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 5;
+}
+
+.goods-list__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.goods-list__text {
+    color: #D8D8D9;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.goods-list__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: #F9FBFD;
+    color: #011C40;
+    margin-top: auto;
+}
+
+.goods-list__preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.goods-list__preview-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.goods-list__item:hover .goods-list__preview {
+    opacity: 0;
+    z-index: -1;
+}
+
+.goods-list__item:hover .goods-list__title {
+    bottom: calc(100% - 65px);
+    left: 25px;
+}
+
 /* goods end */
 
 /* order */
