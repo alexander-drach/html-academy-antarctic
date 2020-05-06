@@ -1,4 +1,41 @@
 
+@font-face {
+    font-family: "Montserrat-Regular";
+
+    src: url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+
+    src: url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+
+    src: url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -16,7 +53,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     color: #011C40;
 }
 
@@ -54,6 +91,7 @@ section {
     font-weight: 600;
     margin-bottom: 60px;
     font-size: 28px;
+    font-family: "Montserrat-SemiBold";
 }
 
 /* header */
@@ -75,6 +113,8 @@ section {
 
 .main-menu {
     display: flex;
+    font-family: "Montserrat-Medium";
+
 }
 
 .main-menu__item {
@@ -96,6 +136,7 @@ section {
 
 .main-title {
     font-size: 54px;
+    font-family: "Montserrat-Bold";
     color: #F9FBFD;
     margin-bottom: 30px;
     padding-left: 100px;
@@ -172,11 +213,11 @@ section {
 }
 
 .features-list__item {
-   flex: 1;
+    flex: 1;
     background-color: #F9FBFD;
     padding: 30px 30px 50px 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .features-list__icon {
@@ -205,6 +246,7 @@ section {
 
 .features-list__title {
     font-size: 18px;
+    font-family: "Montserrat-Medium";
 }
 
 .features-list__desc {
@@ -240,12 +282,14 @@ section {
     left: 30px;
     font-weight: 500;
     font-size: 18px;
+    font-family: "Montserrat-Medium";
     z-index: 5;
 }
 
 .goods-list__subtitle {
     font-weight: 500;
     font-size: 14px;
+    font-family: "Montserrat-Medium";
     margin-bottom: 8px;
 }
 
@@ -324,6 +368,7 @@ section {
 .title-section_order {
     font-weight: bold;
     font-size: 40px;
+    font-family: "Montserrat-Bold";
 }
 
 .order__form {
@@ -425,6 +470,7 @@ section {
 .footer-nav {
     display: flex;
     align-items: center;
+    font-family: "Montserrat-Medium";
 }
 
 .logo_footer {
