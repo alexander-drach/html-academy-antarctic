@@ -536,3 +536,111 @@ section {
 }
 
 /* footer end */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 45px;
+    }
+
+    .header-page {
+        padding: 35px 0 280px 0;
+        background-image: url(../img/bg-header-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-menu__item {
+        font-size: 14px;
+    }
+
+    .main-title {
+        padding-left: 0;
+        font-size: 50px;
+    }
+
+    .slogan {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .intro__thumb {
+        width: 324px;
+    }
+
+    .title-section {
+        font-size: 26px;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .features {
+        background-image: url(../img/bg-features-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .features-list__icon_desc {
+        width: 21px;
+        height: 26px;
+    }
+
+    .features-list__icon_allinclusive {
+        width: 33px;
+        height: 19px;
+    }
+
+    .list__icon_zodiac {
+        width: 38px;
+        height: 13px;
+    }
+
+    .goods-list__item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .order {
+        background-image: url(../img/bg-order-tablet.jpg);
+    }
+
+    .container_order {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order__desc {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .title-section_order {
+        margin-bottom: 15px;
+    }
+
+    .contacts__map {
+        width: 324px;
+        height: 325px;
+        margin-right: 30px;
+    }
+
+    .footer-menu__item {
+        font-size: 12px;
+    }
+
+    .logo_footer {
+        margin-right: 25px;
+    }
+
+    .social-list__item {
+        margin-right: 23px;
+    }
+
+    .social-list__link {
+        width: 16px;
+        height: 16px;
+    }
+}/* 1024px */
