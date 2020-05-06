@@ -515,6 +515,11 @@ section {
     font-weight: normal;
     font-style: normal;
     color: #011C40;
+    transition: color 0.3s ease;
+}
+
+.contacts__phone:hover {
+    color: #0cadfd;
 }
 
 /* contacts end */
