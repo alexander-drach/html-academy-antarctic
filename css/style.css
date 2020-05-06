@@ -545,9 +545,6 @@ section {
     .header-page {
         padding: 35px 0 280px 0;
         background-image: url(../img/bg-header-tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .main-menu__item {
@@ -644,3 +641,119 @@ section {
         height: 16px;
     }
 }/* 1024px */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .title-section {
+        font-size: 24px;
+    }
+
+    .header-page {
+        padding: 35px 0 180px 0;
+        background-image: url(../img/bg-header-mobile.jpg);
+    }
+
+    .nav {
+        margin-bottom: 140px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .humb {
+        display: block;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .slogan {
+        font-size: 16px;
+    }
+
+    .intro .container {
+        flex-wrap: wrap;
+    }
+
+    .intro__desc {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .intro__thumb {
+        width: auto;
+    }
+
+    .features-list {
+        flex-wrap: wrap;
+    }
+
+    .features-list__item {
+        flex: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .goods-list__item {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .order__form {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .title-section_order {
+        font-size: 24px;
+    }
+
+    .contacts .container {
+        flex-direction: column;
+    }
+
+    .contacts__info {
+        order: -1;
+        margin-bottom: 40px;
+    }
+
+    .contacts__map {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer-page .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_footer {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-menu__item {
+        margin-right: 0;
+        margin-bottom: 23px;
+    }
+}
