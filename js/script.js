@@ -1,13 +1,18 @@
 'use strict';
 
-let humb = document.querySelector('.humb');
-let clouse = document.querySelector('.clouse');
-let nav = document.querySelector('.nav');
+let humb = document.querySelector('.checkbox');
+let nav = document.querySelector('.header-page');
+let logo = document.querySelector('.logo picture source');
 
 humb.onclick = function () {
-    nav.classList.add('is-open');
-};
+    console.log('tyt');
+    nav.classList.toggle('is-open');
+    if (logo.getAttribute('srcset') === 'svg/logo-mobile-menu.svg') {
+        logo.setAttribute('srcset', 'svg/logo-mobile.svg');
+        //logo.setAttribute('srcset', 'svg/logo-mobile.svg');
+    }else {
+        logo.setAttribute('srcset', 'svg/logo-mobile-menu.svg');
+        //logo.setAttribute('srcset', 'svg/logo-mobile.svg');
+    }
 
-clouse.onclick = function () {
-    nav.classList.remove('is-open');
 };

@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header-page">
-    <div class="container">
-      <nav class="nav">
+  <div class="header-wrapper">
+    <header class="header-page">
+      <div class="container">
         <a class="logo">
           <picture>
             <source srcset="svg/logo-tablet.svg" media="(max-width: 1024px)">
@@ -19,24 +19,31 @@
             <img class="logo__img" src="svg/logo-desktop.svg" alt="Логотип Круизы в Антарктику">
           </picture>
         </a>
-        <a class="logo-mobile-menu">
-            <img class="logo__img" src="svg/logo-mobile-menu.svg" alt="Логотип Круизы в Антарктику">
-        </a>
-        <ul class="list main-menu">
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Преимущества</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Ближайшие круизы</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
-        </ul>
-        <button class="humb" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
-        <button class="clouse" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </nav>
-      <h1 class="main-title">Круизы в Антарктику</h1>
-      <p class="slogan">Волшебный мир айсбергов и пингвинов</p>
-    </div><!-- container -->
-  </header>
+        <nav class="nav">
+          <ul class="list main-menu">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Преимущества</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Ближайшие круизы</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+          </ul>
+          <label class="label-humb">
+            <input class="checkbox" type="checkbox">
+          </label>
+          <!--<button class="humb" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <button class="clouse" type="button"><span class="visually-hidden">Закрыть</span></button>-->
+        </nav>
+      </div><!-- container -->
+    </header>
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__title">Круизы в Антарктику</h1>
+        <p class="promo__slogan">Волшебный мир айсбергов и пингвинов</p>
+      </div>
+    </section>
+  </div><!-- header-wrapper -->
+
   <main>
     <section class="section intro">
       <h2 class="visually-hidden">Описание сервиса Круизы в Антарктику</h2>
@@ -269,16 +276,13 @@
             <p>Оставьте заявку и мы свяжемся</p>
             <p>с вами в ближайшее время</p>
           </div>
-          <label class="order__field">
-            <span class="visually-hidden">Имя</span>
+          <label class="order__field" aria-label="Имя">
             <input class="input" type="text" name="name" placeholder="Валерия">
           </label>
-          <label class="order__field">
-            <span class="visually-hidden">Телефон</span>
+          <label class="order__field" aria-label="телефон">
             <input class="input" type="tel" name="phone" placeholder="89236889975">
           </label>
-          <label class="order__field">
-            <span class="visually-hidden">Имя</span>
+          <label class="order__field" aria-label="E-mail">
             <input class="input" type="email" name="email" placeholder="grishaewa.lera@gmail.com">
           </label>
           <label class="order__field order__field_check">

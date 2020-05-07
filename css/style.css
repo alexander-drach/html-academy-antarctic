@@ -82,7 +82,7 @@ h1, h2, h3, h4, p {
     margin: 0 auto;
 }
 
-section {
+.section {
     padding: 120px 0;
 }
 
@@ -96,19 +96,19 @@ section {
 
 /* header */
 
-.header-page {
-    padding: 35px 0 280px 0;
+.header-wrapper {
+    padding-top: 35px;
     background-image: url(../img/bg-header-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.nav {
+.header-page .container {
+    /*margin-bottom: ;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 210px;
 }
 
 .main-menu {
@@ -133,21 +133,42 @@ section {
     color: #0cadfd;
 }
 
-.main-title {
+.promo {
+    padding: 210px 0 280px 100px;
+}
+
+.promo__title {
     font-size: 54px;
     font-family: "Montserrat-Bold";
     color: #F9FBFD;
     margin-bottom: 30px;
-    padding-left: 100px;
     font-weight: 700;
 }
 
-.slogan {
+.promo__slogan {
     font-size: 20px;
     color: #F9FBFD;
-    padding-left: 100px;
 }
 
+
+.checkbox {
+    position:absolute;
+    clip:rect(1px,1px,1px,1px);
+    height:1px;
+    width:1px;
+}
+
+.label-humb {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url(../svg/icon-humb.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
 .humb {
     display: none;
     background-color: transparent;
@@ -160,7 +181,7 @@ section {
     padding: 0;
 }
 
-.clouse {
+.close {
     display: none;
     background-color: transparent;
     background-image: url(../svg/icon-close.svg);
@@ -171,11 +192,7 @@ section {
     height: 13px;
     padding: 0;
 }
-
-.logo-mobile-menu {
-    display: none;
-}
-
+*/
 .is-open {
     position: fixed;
     top: 0;
@@ -191,26 +208,26 @@ section {
     align-items: flex-start;
 }
 
-.is-open .logo {
-    display: none;
+.is-open .container {
+    display: block;
+    padding: 0;
+    margin: 0;
 }
 
-.is-open .logo-mobile-menu{
-    display: block;
+.is-open .logo {
     position: absolute;
     top: 20px;
     left: 15px;
 }
 
-.is-open .humb {
-    display: none;
-}
-
-.is-open .clouse {
+.is-open .label-humb {
     display: block;
     position: absolute;
     top: 25px;
     right: 25px;
+    background-image: url(../svg/icon-close.svg);
+    width: 13px;
+    height: 13px;
 }
 
 .is-open .main-menu {
@@ -612,22 +629,28 @@ section {
         padding: 0 45px;
     }
 
-    .header-page {
-        padding: 35px 0 280px 0;
+    .header-wrapper {
         background-image: url(../img/bg-header-tablet.jpg);
+    }
+
+    .header-page {
+        margin-bottom: 0;
     }
 
     .main-menu__item {
         font-size: 14px;
     }
 
-    .main-title {
+    .promo {
         padding-left: 0;
+    }
+
+    .promo__title {
+
         font-size: 50px;
     }
 
-    .slogan {
-        padding-left: 0;
+    .promo__slogan {
         font-size: 18px;
     }
 
@@ -725,28 +748,23 @@ section {
         font-size: 24px;
     }
 
-    .header-page {
-        padding: 35px 0 180px 0;
+    .header-wrapper {
         background-image: url(../img/bg-header-mobile.jpg);
-    }
-
-    .nav {
-        margin-bottom: 140px;
     }
 
     .main-menu {
         display: none;
     }
 
-    .humb {
+    .label-humb {
         display: block;
     }
 
-    .main-title {
+    .promo__title {
         font-size: 36px;
     }
 
-    .slogan {
+    .promo__slogan {
         font-size: 16px;
     }
 
