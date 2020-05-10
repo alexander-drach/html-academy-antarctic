@@ -830,12 +830,3 @@ h1, h2, h3, h4, p {
         margin-bottom: 23px;
     }
 }
-
-img {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-img[data-src] {
-    opacity: 0;
-}
