@@ -608,6 +608,11 @@ h1, h2, h3, h4, p {
         padding: 0 45px;
     }
 
+    .header-page .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
     .header-wrapper {
         background-image: url(../img/bg-header-tablet.jpg);
     }
@@ -717,6 +722,11 @@ h1, h2, h3, h4, p {
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
+    }
+
+    .header-page .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .section {
