@@ -12,3 +12,11 @@ humb.onclick = function () {
         logo.setAttribute('srcset', 'svg/logo-mobile-menu.svg');
     }
 };
+
+
+    [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+        img.removeAttribute('data-src');
+    };
+});

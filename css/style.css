@@ -6,6 +6,7 @@
     url("../fonts/Montserrat-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap
 }
 
 @font-face {
@@ -15,6 +16,7 @@
     url("../fonts/Montserrat-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
+    font-display: swap
 }
 
 @font-face {
@@ -24,6 +26,7 @@
     url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
+    font-display: swap
 }
 
 @font-face {
@@ -33,6 +36,7 @@
     url("../fonts/Montserrat-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
+    font-display: swap
 }
 
 
@@ -825,4 +829,13 @@ h1, h2, h3, h4, p {
         margin-right: 0;
         margin-bottom: 23px;
     }
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
 }
