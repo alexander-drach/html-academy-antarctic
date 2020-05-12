@@ -275,10 +275,10 @@
             <p>с вами в ближайшее время</p>
           </div>
           <label class="order__field" aria-label="Имя">
-            <input class="input" type="text" name="name" placeholder="Валерия">
+            <input class="input" type="text" name="name" placeholder="Валерия" required>
           </label>
           <label class="order__field" aria-label="телефон">
-            <input class="input" type="tel" name="phone" placeholder="89236889975">
+            <input class="input" type="tel" name="phone" placeholder="89236889975" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" >
           </label>
           <label class="order__field" aria-label="E-mail">
             <input class="input" type="email" name="email" placeholder="grishaewa.lera@gmail.com">
