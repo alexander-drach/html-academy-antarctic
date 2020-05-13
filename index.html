@@ -66,33 +66,35 @@
     <section class="section features" id="features">
       <h2 class="title-section">Преимущества</h2>
       <ul class="list features-list container">
-        <li class="features-list__item">
-          <div class="features-list__icon features-list__icon_desc"><span class="visually-hidden">иконка описания круизного лайнера</span></div>
-          <h3 class="features-list__title">Небольшой круизный лайнер</h3>
-          <div class="features-list__desc">
-            <p>
-              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.
-            </p>
-          </div>
-        </li><!-- features-list__item -->
-        <li class="features-list__item">
-          <div class="features-list__icon features-list__icon_allinclusive"><span class="visually-hidden">иконка описания все включено</span></div>
-          <h3 class="features-list__title">Система все включено</h3>
-          <div class="features-list__desc">
-            <p>
-              Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
-            </p>
-          </div>
-        </li><!-- features-list__item -->
-        <li class="features-list__item">
-          <div class="features-list__icon features-list__icon_zodiac"><span class="visually-hidden">иконка описания лодок</span></div>
-          <h3 class="features-list__title">Экскурсионные туры на Zodiac</h3>
-          <div class="features-list__desc">
-            <p>
-              Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.
-            </p>
-          </div>
-        </li><!-- features-list__item -->
+        <div class="features-list__inner">
+          <li class="features-list__item">
+            <div class="features-list__icon features-list__icon_desc"><span class="visually-hidden">иконка описания круизного лайнера</span></div>
+            <h3 class="features-list__title">Небольшой круизный лайнер</h3>
+            <div class="features-list__desc">
+              <p>
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.
+              </p>
+            </div>
+          </li><!-- features-list__item -->
+          <li class="features-list__item">
+            <div class="features-list__icon features-list__icon_allinclusive"><span class="visually-hidden">иконка описания все включено</span></div>
+            <h3 class="features-list__title">Система все включено</h3>
+            <div class="features-list__desc">
+              <p>
+                Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
+              </p>
+            </div>
+          </li><!-- features-list__item -->
+          <li class="features-list__item">
+            <div class="features-list__icon features-list__icon_zodiac"><span class="visually-hidden">иконка описания лодок</span></div>
+            <h3 class="features-list__title">Экскурсионные туры на Zodiac</h3>
+            <div class="features-list__desc">
+              <p>
+                Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.
+              </p>
+            </div>
+          </li><!-- features-list__item -->
+        </div><!-- features-list__inner -->
       </ul>
     </section>
     <section class="section goods" id="goods">
@@ -270,7 +272,7 @@
           <p>до даты выезда и сэкономьте до 50%</p>
         </div>
         <form class="order__form" action="/" method="post">
-          <div>
+          <div class="form-intro">
             <p>Оставьте заявку и мы свяжемся</p>
             <p>с вами в ближайшее время</p>
           </div>
@@ -298,12 +300,14 @@
           <script defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A249c1f48f4eb71cbafa6cc740f37a3603250b0f664e55ab70b8cc6e0800aaca3&amp;&amp;&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
         <div class="contacts__info">
-          <p>
-            У вас ещё остались вопросы или сомнения?
-          </p>
-          <p>
-            Приезжайте к нам в офис и мы вам все расскажем.
-          </p>
+          <div class="contacts-intro">
+            <p>
+              У вас ещё остались вопросы или сомнения?
+            </p>
+            <p>
+              Приезжайте к нам в офис и мы вам все расскажем.
+            </p>
+          </div>
           <address>
             <p class="contacts__location">
               г. Санкт Петербург, ул. Большая Конюшенная, 19/8

@@ -84,6 +84,7 @@ input[type="button"],
 input[type="submit"] {
     -webkit-appearance: none;
     border-radius: 0;
+    border: none;
 }
 
 .list {
@@ -277,17 +278,19 @@ input[type="submit"] {
     margin-bottom: 55px;
 }
 
-.features-list {
+.features-list__inner {
     display: flex;
-    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+    overflow: hidden;
 }
 
 .features-list__item {
-    width: 360px;
+    width: calc(100% / 3 - 40px);
     background-color: #F9FBFD;
     padding: 30px 30px 34px 30px;
-    /*margin-left: 15px;*/
-    /*margin-right: 15px;*/
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .features-list__icon {
@@ -308,7 +311,6 @@ input[type="submit"] {
     background-image: url(../svg/icon-feature-allinclusive.svg);
     margin-top: 3px;
     margin-bottom: 28px;
-    margin-left: 1px;
 }
 
 .features-list__icon_zodiac {
@@ -337,6 +339,7 @@ input[type="submit"] {
 
 .goods {
     padding-top: 113px;
+    padding-bottom: 86px;
 }
 
 .goods .title-section {
@@ -357,13 +360,13 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     color: #F9FBFD;
-    padding: 75px 25px 35px 25px;
+    padding: 59px 25px 35px 25px;
 }
 
 
 .goods-list__title {
     position: absolute;
-    bottom: 30px;
+    bottom: 9px;
     left: 30px;
     font-weight: 500;
     font-size: 18px;
@@ -442,30 +445,43 @@ input[type="submit"] {
 }
 
 .container_order {
-    max-width: 1080px;
+    max-width: 1040px;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .order__desc {
     font-size: 18px;
     line-height: 1.5;
     flex: 1;
-    margin-right: 140px;
+    margin-top: 163px;
+    margin-right: 20px;
 }
 
 .title-section_order {
     font-weight: bold;
     font-size: 40px;
     font-family: "Montserrat-Bold";
+    margin-bottom: 8px;
+}
+
+.order__desc p {
+    margin-bottom: 0
 }
 
 .order__form {
     width: 403px;
-    padding: 50px;
+    padding: 48px 50px 50px 50px;
     background-color: #011C40;
     color: #F9FBFD;
+}
+
+.form-intro {
+    margin-bottom: 30px;
+}
+
+.form-intro p{
+    margin-bottom: 8px;
+    letter-spacing: 1.3px;
 }
 
 .order__field {
@@ -477,28 +493,33 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     font-size: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .check {
-    margin-right: 7px;
+    margin: 0 7px 0 0;
+    border-radius: 0;
+    cursor:pointer;
 }
 
 .input {
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     font-size: 14px;
+    letter-spacing: 1.2px;
+    max-height: 43px;
 }
 
 .btn-submit {
     background-color: #F9FBFD;
     border: none;
     width: 100%;
-    padding: 15px 0 17px 0;
+    padding: 14px 0 16px 0;
     text-align: center;
     font-weight: 600;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    letter-spacing: 1.2px;
 }
 
 .btn-submit:hover {
@@ -509,9 +530,12 @@ input[type="submit"] {
 
 /* contacts */
 
+.contacts {
+    padding-bottom: 124px;
+}
+
 .contacts .container {
     display: flex;
-    align-items: center;
 }
 
 .contacts__map {
@@ -525,10 +549,21 @@ input[type="submit"] {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
+    margin-top: 75px;
+}
+
+.contacts-intro {
+    font-family: "Montserrat-Medium";
+    margin-bottom: 31px;
+}
+
+.contacts-intro p {
+    margin-bottom: 0;
 }
 
 .contacts__location {
-    padding-left: 30px;
+    padding-left: 26px;
+    margin-bottom: 23px;
     background-image: url(../svg/icon-geo.svg);
     background-repeat: no-repeat;
     background-size: 18px 22px;
@@ -540,7 +575,7 @@ input[type="submit"] {
 .contacts__phone {
     display: block;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 28px;
     margin-bottom: 10px;
     background-image: url(../svg/icon-phone.svg);
     background-repeat: no-repeat;
@@ -593,12 +628,13 @@ input[type="submit"] {
 .footer-menu {
     display: flex;
     flex-wrap: wrap;
-    max-width: 590px;
+    max-width: 650px;
     white-space: nowrap;
 }
 
 .footer-menu__item {
-    margin-right: 30px;
+    margin-right: 19px;
+    letter-spacing: 1.1px;
 }
 
 .footer-menu__item:last-child {
