@@ -467,6 +467,9 @@ input[type="submit"] {
 .order__desc p {
     margin-bottom: 0
 }
+.order__desc_mobile p{
+    display: none;
+}
 
 .order__form {
     width: 403px;
@@ -477,6 +480,10 @@ input[type="submit"] {
 
 .form-intro {
     margin-bottom: 30px;
+}
+
+.form-intro_mobile {
+    display: none;
 }
 
 .form-intro p{
@@ -907,8 +914,8 @@ input[type="submit"] {
     }
 
     .promo {
-        padding-top: 140px;
-        padding-bottom: 180px;
+        padding-top: 130px;
+        padding-bottom: 169px;
     }
 
     .promo__title {
@@ -926,22 +933,50 @@ input[type="submit"] {
 
     .intro__desc {
         margin-right: 0;
-        margin-bottom: 40px;
+        margin-bottom: 14px;
     }
 
     .intro__thumb {
         width: auto;
     }
 
-    .features-list {
+    .features {
+        padding-top: 58px;
+        padding-bottom: 51px;
+    }
+
+    .features .title-section {
+        margin-bottom: 36px;
+    }
+
+    .features-list__inner {
         flex-wrap: wrap;
     }
 
     .features-list__item {
-        flex: 100%;
+        width: 100%;
         margin-bottom: 30px;
         margin-right: 0;
         margin-left: 0;
+        padding-bottom: 14px;
+    }
+
+    .features-list__icon {
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+
+    .features-list__icon_zodiac {
+        margin-bottom: 30px;
+    }
+
+    .goods {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .goods .title-section {
+        margin-bottom: 34px;
     }
 
     .goods-list__item {
@@ -950,17 +985,38 @@ input[type="submit"] {
         margin-left: 0;
     }
 
+    .order {
+        padding-top: 52px;
+        padding-bottom: 61px;
+    }
+
     .order__form {
         width: 100%;
         padding: 40px 30px;
+    }
+
+    .order__field_check {
+        margin-bottom: 26px;
     }
 
     .title-section_order {
         font-size: 24px;
     }
 
+    .contacts {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .contacts__info {
+        margin-top: 0;
+    }
+
     .contacts .container {
         flex-direction: column;
+    }
+
+    .form-intro {
+        text-align: center;
     }
 
     .contacts__info {
@@ -971,6 +1027,10 @@ input[type="submit"] {
     .contacts__map {
         width: 100%;
         margin-right: 0;
+    }
+
+    .footer-page{
+        padding-top: 41px
     }
 
     .footer-page .container {
@@ -990,10 +1050,60 @@ input[type="submit"] {
 
     .footer-menu {
         flex-direction: column;
+        margin-bottom: 10px;
     }
 
     .footer-menu__item {
         margin-right: 0;
-        margin-bottom: 23px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo__slogan {
+        max-width: 199px;
+    }
+
+    .features-list__title {
+        max-width: 170px;
+    }
+
+    .features-list__title_allinclusive {
+        max-width: 140px;
+    }
+
+    .goods-list__item {
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order__desc {
+        margin-bottom: 15px;
+    }
+
+    .order__desc p {
+        display: none;
+    }
+    .order__desc_mobile {
+        margin-bottom: 5px;
+    }
+
+    .order__desc .order__desc_mobile p {
+        display: block;
+    }
+
+    .form-intro {
+        display: none;
+    }
+
+    .form-intro_mobile {
+        display: block;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+
+    .form-intro_mobile p {
+        margin-bottom: 5px;
     }
 }
