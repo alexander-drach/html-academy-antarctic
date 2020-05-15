@@ -56,16 +56,19 @@
         </div>
         <div class="intro__thumb">
           <picture>
-            <source srcset="img/intro-thumb-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="img/intro-thumb-tablet.jpg" media="(max-width: 1024px)">
-            <img src="img/intro-thumb-desktop.jpg" alt="Фото пингвинов">
+            <source srcset="img/intro-thumb-mobile.jpg 1x, img/intro-thumb-mobile@2x.jpg 2x, img/intro-thumb-mobile@3x.jpg 3x" media="(max-width: 767px)">
+            <!-- 1x:290px, 2x:580px, 3x:870px -->
+            <source srcset="img/intro-thumb-tablet.jpg 1x, img/intro-thumb-tablet@2x.jpg 2x, img/intro-thumb-tablet@3x.jpg 3x" media="(max-width: 1024px)">
+            <!-- 1x:324px, 2x:648px, 3x:972px -->
+            <img src="img/intro-thumb-desktop.jpg" srcset="img/intro-thumb-desktop.jpg 1x, img/intro-thumb-desktop@2x.jpg 2x, img/intro-thumb-desktop@3x.jpg 3x" alt="Фото пингвинов">
+            <!-- 1x:560px, 2x:1120px, 3x:1680px -->
           </picture>
         </div>
       </div><!-- container -->
     </section>
     <section class="section features" id="features">
       <h2 class="title-section">Преимущества</h2>
-      <ul class="list features-list container features-list__inner">
+      <ul class="list features-list container">
           <li class="features-list__item">
             <div class="features-list__icon features-list__icon_desc"><span class="visually-hidden">иконка описания круизного лайнера</span></div>
             <h3 class="features-list__title">Небольшой круизный лайнер</h3>
@@ -112,9 +115,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/astory-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/astory-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/astory-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/astory-mobile-min.jpg 1x, img/goods/astory-mobile@2x-min.jpg 2x, img/goods/astory-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/astory-tablet-min.jpg 1x img/goods/astory-tablet@2x-min.jpg 2x, img/goods/astory-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/astory-desktop-min.jpg" srcset="img/goods/astory-desktop-min.jpg 1x, img/goods/astory-desktop@2x-min.jpg 2x, img/goods/astory-desktop@3x-min.jpg 3x" alt="Круиз Астория">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -132,9 +138,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/astory-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/astory-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/astory-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/astory-mobile-min.jpg 1x, img/goods/astory-mobile@2x-min.jpg 2x, img/goods/astory-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/astory-tablet-min.jpg 1x img/goods/astory-tablet@2x-min.jpg 2x, img/goods/astory-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/astory-desktop-min.jpg" srcset="img/goods/astory-desktop-min.jpg 1x, img/goods/astory-desktop@2x-min.jpg 2x, img/goods/astory-desktop@3x-min.jpg 3x" alt="Круиз Астория">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -152,9 +161,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/atlantis-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/atlantis-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/atlantis-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/atlantis-mobile-min.jpg 1x, img/goods/atlantis-mobile@2x-min.jpg 2x, img/goods/atlantis-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/atlantis-tablet-min.jpg 1x, img/goods/atlantis-tablet@2x-min.jpg 2x, img/goods/atlantis-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/atlantis-desktop-min.jpg" srcset="img/goods/atlantis-desktop-min.jpg 1x, img/goods/atlantis-desktop@2x-min.jpg 2x, img/goods/atlantis-desktop@3x-min.jpg 3x" alt="Круиз Атлантис">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -172,9 +184,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/odissey-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/odissey-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/odissey-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/odissey-mobile-min.jpg 1x, img/goods/odissey-mobile@2x-min.jpg 2x, img/goods/odissey-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/odissey-tablet-min.jpg 1x, img/goods/odissey-tablet@2x-min.jpg 2x, img/goods/odissey-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/odissey-desktop-min.jpg" srcset="img/goods/odissey-desktop-min.jpg 1px, img/goods/odissey-desktop@2x-min.jpg 2x, img/goods/odissey-desktop@3x-min.jpg 3x" alt="Круиз Одиссей">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -192,9 +207,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/olimpia-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/olimpia-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/olimpia-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/olimpia-mobile-min.jpg 1x, img/goods/olimpia-mobile@2x-min.jpg 2x, img/goods/olimpia-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/olimpia-tablet-min.jpg 1x, img/goods/olimpia-tablet@2x-min.jpg 2x, img/goods/olimpia-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:px, 2x:px, 3x:px -->
+              <img class="goods-list__preview-img" src="img/goods/olimpia-desktop-min.jpg" srcset="img/goods/olimpia-desktop-min.jpg 1x, img/goods/olimpia-desktop@2x-min.jpg 2x, img/goods/olimpia-desktop@3x-min.jpg 3x" srcset="" alt="Круиз Олимпия">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -212,9 +230,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/avrora-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/avrora-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/avrora-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/avrora-mobile-min.jpg 1x, img/goods/avrora-mobile@2x-min.jpg 2x, img/goods/avrora-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/avrora-tablet-min.jpg 1x, img/goods/avrora-tablet@2x-min.jpg 2x, img/goods/avrora-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/avrora-desktop-min.jpg" srcset="img/goods/avrora-desktop-min.jpg 1x, img/goods/avrora-desktop@2x-min.jpg 2x, img/goods/avrora-desktop@3x-min.jpg 3x" alt="Круиз Аврора">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -232,9 +253,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/leonor-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/leonor-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/leonor-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/leonor-mobile-min.jpg 1x, img/goods/leonor-mobile@2x-min.jpg 2x, img/goods/leonor-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/leonor-tablet-min.jpg 1x, img/goods/leonor-tablet@2x-min.jpg 2x, img/goods/leonor-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/leonor-desktop-min.jpg" srcset="img/goods/leonor-desktop-min.jpg 1x, img/goods/leonor-desktop@2x-min.jpg 2x, img/goods/leonor-desktop@3x-min.jpg 3x" alt="Круиз Леонор">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->
@@ -252,9 +276,12 @@
           <a class="goods-list__link" href="#">Забронировать</a>
           <div  class="goods-list__preview">
             <picture>
-              <source srcset="img/goods/minion-1-mobile-min.jpg" media="(max-width: 767px)">
-              <source srcset="img/goods/minion-1-tablet-min.jpg" media="(max-width: 1024px)">
-              <img class="goods-list__preview-img" src="img/goods/minion-1-desktop-min.jpg" alt="Круиз Астория">
+              <source srcset="img/goods/minion-1-mobile-min.jpg 1x, img/goods/minion-1-mobile@2x-min.jpg 2x, img/goods/minion-1-mobile@3x-min.jpg 3x" media="(max-width: 767px)">
+              <!-- 1x:270px, 2x:540px, 3x:810px -->
+              <source srcset="img/goods/minion-1-tablet-min.jpg 1x, img/goods/minion-1-tablet@2x-min.jpg 2x, img/goods/minion-1-tablet@3x-min.jpg 3x" media="(max-width: 1024px)">
+              <!-- 1x:309px, 2x:618px, 3x:927px -->
+              <img class="goods-list__preview-img" src="img/goods/minion-1-desktop-min.jpg" srcset="img/goods/minion-1-desktop-min.jpg 1x, img/goods/minion-1-desktop@2x-min.jpg 2x, img/goods/minion-1-desktop@3x-min.jpg 3x" alt="Круиз Минион 1">
+              <!-- 1x:260px, 2x:520px, 3x:780px -->
             </picture>
           </div>
         </li><!-- goods-list__item -->

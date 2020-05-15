@@ -278,19 +278,24 @@ input[type="submit"] {
     margin-bottom: 55px;
 }
 
-.features-list__inner {
+.features-list {
     display: flex;
-    margin-left: -20px;
-    margin-right: -20px;
-    overflow: hidden;
 }
 
 .features-list__item {
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 20px);
     background-color: #F9FBFD;
-    padding: 30px 30px 34px 30px;
+    padding: 30px 30px 27px 30px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.features-list__item:first-child {
+    margin-left: 0;
+}
+
+.features-list__item:last-child {
+    margin-right: 0;
 }
 
 .features-list__icon {
@@ -949,7 +954,7 @@ input[type="submit"] {
         margin-bottom: 36px;
     }
 
-    .features-list__inner {
+    .features-list {
         flex-wrap: wrap;
     }
 
